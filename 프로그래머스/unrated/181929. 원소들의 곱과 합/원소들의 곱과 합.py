@@ -6,7 +6,10 @@ def solution(num_list):
     for i in num_list:
         multiply *= i
         add += i
-        
-    answer = 1 if multiply < add*add else 0
+    if   multiply < add*add:
+        return 1
+    else:
+        return 0
+    # answer = 1 if multiply < add*add else 0
     
-    return answer
+    # return answer
