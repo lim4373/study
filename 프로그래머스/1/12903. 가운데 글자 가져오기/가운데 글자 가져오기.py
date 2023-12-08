@@ -1,5 +1,5 @@
 def solution(s):
-    center = int(len(s)/2)
+    center = int(len(s)//2)
     if len(s)% 2 !=0:
         return s[center]
     else:
