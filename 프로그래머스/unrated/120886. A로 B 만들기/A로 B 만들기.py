@@ -1,7 +1,7 @@
 def solution(before, after):
-    before = sorted(before)
-    after  = sorted(after)
-    if before == after:
+    a = sorted(before)
+    b = sorted(after)
+    if a == b:
         return 1
-    else:
-        return 0 
+    else: 
+        return 0
