@@ -1,2 +1,5 @@
 def solution(array):
-    return ''.join(map(str,array)).count("7")
+    answer = ''
+    for i in array:
+        answer += str(i)
+    return answer.count(str(7))
