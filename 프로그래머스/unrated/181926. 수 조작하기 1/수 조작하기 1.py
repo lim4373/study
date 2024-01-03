@@ -1,12 +1,3 @@
 def solution(n, control):
-    answer = n
-    for k in control:
-        if k == 'w':
-            answer +=1
-        elif k == 's':
-            answer -=1
-        elif k == 'd':
-            answer +=10
-        elif k == 'a':
-            answer -=10
-    return answer
+    key = dict(zip(['w','s','d','a'], [1,-1,10,-10]))
+    return n + sum([key[c] for c in control])
