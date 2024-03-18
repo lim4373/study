@@ -1,12 +1,10 @@
-
 def solution(babbling):
-    can = ["aya", "ye", "woo", "ma" ]
-    answer=0
+    answer = 0
+    joka = ["aya", "ye", "woo", "ma" ]
     for i in babbling:
-        for c in can:
-            if c * 2 not in i:
-                i = i.replace(c,'1')
-
-        if i.isdigit():
+        for j in joka:
+            if j*2 not in i:
+                i = i.replace(j,' ')
+        if i.isspace():
             answer+=1
     return answer
