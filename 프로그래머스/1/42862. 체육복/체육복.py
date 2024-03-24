@@ -1,15 +1,17 @@
 def solution(n, lost, reserve):
-    lost.sort()
-    reserve.sort()
-    for i in reserve[:]:
-        if i in lost:
-            reserve.remove(i)
-            lost.remove(i)
-            
-    for i in reserve:
-        if i-1 in lost:
-            lost.remove(i-1)
-        elif i+1 in lost:
-            lost.remove(i+1)
-            
-    return n-len(lost)
+    lost_set = set(lost)
+    reserve_set = set(reserve)
+    answer = n
+
+    reserve_and_lost = lost_set & reserve_set
+    lost_set -= reserve_and_lost
+    reserve_set -= reserve_and_lost
+
+    for x in reserve_set:
+        if x-1 in lost_set:
+            lost_set.remove(x-1)
+        elif x+1 in lost_set:
+            lost_set.remove(x+1)
+
+    answer -= len(lost_set)
+    return answer
