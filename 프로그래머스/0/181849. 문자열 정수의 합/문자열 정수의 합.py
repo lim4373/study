@@ -1,2 +1,6 @@
 def solution(num_str):
-    return sum([int(i) for i in list(num_str)])
+    answer=0
+    for i in num_str:
+        answer +=int(i)
+    return answer
+        
