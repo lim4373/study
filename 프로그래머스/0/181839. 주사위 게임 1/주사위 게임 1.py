@@ -3,5 +3,4 @@ def solution(a, b):
         return a**2 + b**2
     elif a % 2 != b % 2:
         return 2 * (a + b)
-    else:
-        return abs(a-b)
+    return abs(a-b)
