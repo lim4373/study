@@ -1,2 +1,5 @@
 def solution(num):
-    return "Even" if num % 2 == 0 else "Odd"
+    if num % 2 ==0:
+        return "Even"
+    else:
+        return "Odd"
