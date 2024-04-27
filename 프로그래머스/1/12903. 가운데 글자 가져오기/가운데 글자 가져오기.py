@@ -1,6 +1,8 @@
 def solution(s):
-    center = int(len(s)//2)
+    c = int(len(s)/2)
     if len(s)% 2 !=0:
-        return s[center]
+        return s[c]
     else:
-        return(s[center-1:center+1])
+        return s[c-1:c+1]
+    
+    
