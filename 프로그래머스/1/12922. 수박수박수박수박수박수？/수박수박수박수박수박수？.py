@@ -1,2 +1,3 @@
 def solution(n):
-    return ("수박"*n)[:n]
+    print('수박'*n)
+    return ('수박'*n)[:n]
