@@ -1,2 +1,2 @@
 def solution(M, N):
-    return (M*N-1)
+    return (M*N)-1
