@@ -1,3 +1,4 @@
 def solution(strings, n):
-    strings.sort() 
-    return sorted(strings, key=lambda x:x[n])
+    strings.sort()
+    print(strings)
+    return sorted(strings,key=lambda x:x[n])
