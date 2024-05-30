@@ -1,8 +1,9 @@
 def solution(price, money, count):
-    answer = []
     for i in range(1,count+1):
-        answer.append(price*i)        
-    if sum(answer)-money >0:
-        return sum(answer)-money
+        money-=price*i
+    if money < 0:
+        money = abs(money)
     else:
-        return 0
+        money = 0
+
+    return money
