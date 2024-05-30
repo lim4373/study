@@ -1,6 +1,6 @@
 # [level 1] 문자열 내림차순으로 배치하기 - 12917 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12917?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12917) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 29일 01:08:37
+2024년 05월 30일 18:22:16
 
 ### 문제 설명
 
