@@ -1,9 +1,11 @@
-def solution(myString, pat):
-    count = 0
-    index = myString.find(pat)
-
-    while index != -1:
-        count += 1
-        index = myString.find(pat, index + 1)
-
-    return count
+def solution(myString,pat):
+    start = 0
+    cnt = 0
+    
+    while True:
+        idx = myString.find(pat,start)
+        if idx == -1:
+            break
+        cnt +=1
+        start = idx+1
+    return cnt
