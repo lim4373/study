@@ -1,8 +1,3 @@
 def solution(myStr):
-    answer = []
-    for i in ['a','b','c']:
-        myStr= myStr.replace(i,' ')
-    answer = myStr.split()
-    if not answer:
-        answer = ['EMPTY']
-    return answer
+    answer = myStr.replace('a',' ').replace('b',' ').replace('c',' ')
+    return answer.split() or ["EMPTY"]
